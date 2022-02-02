@@ -1,0 +1,160 @@
+/* a flex container */
+.flex-container-one {
+    min-height: 160px;
+    /* makes the container flexible */
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(155, 128, 148);
+    border-radius: 10px;
+    margin: 20px;
+    /* aligns the items vertically at the bottom of the container */
+    align-items: flex-end;
+}
+.item {
+    width: 78px;
+    min-height: 78px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(164, 221, 231);
+    padding: 5px;
+    text-align: center;
+}
+.flex-container-two {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 160px;
+    background-color: rgb(155, 128, 148);
+    border-radius: 10px;
+    margin: 20px;
+    /* aligns items horizontally to the center of the container */
+    justify-content: center;
+}
+.flex-container-three {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 160px;
+    background-color: rgb(155, 128, 148);
+    border-radius: 10px;
+    margin: 20px;
+    /* items are placed horizontally at the end of the container */
+    justify-content: flex-end;
+    /* items are placed vertically in center of the container */
+    align-items: center;
+}
+.flex-container-four {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 160px;
+    background-color: rgb(155, 128, 148);
+    border-radius: 10px;
+    margin: 20px;
+    align-items: center;
+    /* items are placed centered horozontally in the container */
+    justify-content: center;
+}
+.item-12 {
+    flex-grow: 1;
+}
+.flex-container-five {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 160px;
+    flex-basis: 160px;
+    background-color: rgb(155, 128, 148);
+    color:olivedrab;
+    border-radius: 10px;
+    margin: 20px;
+    /* items will have an even space around them */
+    justify-content: space-evenly;
+}
+.item-14 {
+    height: 20px;
+}
+.flex-container-six {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 160px;
+    background-color: rgb(155, 128, 148);
+    border-radius: 10px;
+    margin: 20px;
+    /* items are placed vertically in the center of the container */
+    align-items: center;
+}
+.flex-container-circles-one {
+    display: flex;
+    /* specifies that the items should wrap if theres no space for it */
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: rgb(109, 165, 107);
+    border-radius: 10px;
+    margin: 20px;
+    align-items: flex-start;
+}
+.circle {
+    background-color: rgb(135, 32, 167);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.flex-container-circles-two {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: rgb(109, 165, 107);
+    border-radius: 10px;
+    margin: 20px;
+    /* aligns items vertically at the start of the container */
+    align-items: flex-start;
+    /* reverse the order of the items inside container */
+    flex-direction: row-reverse;
+    /* if items in container needs to be wrapped they will reverse in order */
+    flex-wrap: wrap-reverse;
+}
+.circle {
+    background-color: rgb(135, 32, 167);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.flex-container-circles-three {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: rgb(109, 165, 107);
+    border-radius: 10px;
+    margin: 20px;
+    /* items will have space between them */
+    justify-content: space-between;
+    /* vertically aligns items in the center of the container */
+    align-items: center;
+}
+.flex-container-circles-four {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: rgb(109, 165, 107);
+    border-radius: 10px;
+    margin: 20px;
+    /* items will have space before, between and after */
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container-circles-five {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: rgb(109, 165, 107);
+    border-radius: 10px;
+    margin: 20px;
+    align-items: center;
+    /* shrinks the item */
+    flex-shrink: 1;
+    justify-content: center;
+}
